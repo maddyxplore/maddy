@@ -75,3 +75,19 @@ for i in range(m,n+1):
     if i%3==0 and i%5==0:
         sum+=i
 print(sum)
+
+#You have to find and return the number between ‘a’ and ‘b’ ( range inclusive on both ends) which has the maximum exponent of 2.
+# -----------------INCOMPLETED---------------------------#
+#a,b = int(input()), int(input())
+a,b = 7,12
+def expo(n):
+    temp = 0
+    while(n%2==0 and n!=0):
+        temp+=1
+        n//=2
+    return temp
+max = 0
+temp = 0
+for i in range(a,b+1):
+    if 
+print(max)
