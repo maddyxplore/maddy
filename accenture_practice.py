@@ -36,3 +36,13 @@ for i in range(x,y):
     if i == reverse:
         print(reverse,end=" ")
 
+# Problem: Write a program in C to display the table of a number and print the sum of all the multiples in it.
+
+n = 5
+table,total = [],0
+for i in range(1,11):
+    table.append(i*n)
+    total+=(i*n)
+print(*table)
+print(total)        
+
