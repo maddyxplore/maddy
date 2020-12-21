@@ -46,3 +46,20 @@ for i in range(1,11):
 print(*table)
 print(total)        
 
+#You are required to input the size of the matrix then the elements of matrix, then you have to divide the main matrix in two sub matrices (even and odd) in such a way that element at 0 index will be considered as even and element at 1st index will be considered as odd and so on. then you have sort the even and odd matrices in ascending order then print the sum of second largest number from both the matrices
+
+n = int(input("Enter the number: "))
+odd,even = [],[]
+
+for i in range(n):
+    temp = int(input("Enter the {} element".format(i)))
+    if i%2==0:
+        even.append(temp)
+    else:
+        odd.append(temp)
+odd.sort()
+even.sort()
+
+print(*odd)
+print(*even)
+print(odd[-2]+even[-2])
