@@ -21,3 +21,18 @@ def sqrt(x,y,x1,y1):
     return int(res)
 
 print(sqrt(x1,y1,x2,y2),sqrt(x2,y2,x3,y3),sqrt(x3,y3,x1,y1))
+
+# Write a program in C such that it takes a lower limit and upper limit as inputs and print all the intermediate pallindrome numbers.
+
+x,y = 10,80
+
+for i in range(x,y):
+    reverse = 0
+    temp = i
+    while (temp != 0):
+        remainder = temp%10
+        reverse = (reverse*10)+remainder
+        temp = temp // 10
+    if i == reverse:
+        print(reverse,end=" ")
+
