@@ -92,3 +92,17 @@ for i in range(a,b+1):
         max = i
 
 print(max)
+
+#The function accepts 3 positive integers ‘a’ , ‘b’ and ‘c ‘ as its arguments. Implement the function to return.
+c = int(input("Enter the choice 1 to 4: "))
+a = int(input("Enter the first number: "))
+b = int(input("Enter the second number: "))
+def calc(c,a,b):
+    if c==1:return a+b
+    elif c==2:return abs(a-b)
+    elif c==3:return a*b
+    elif c==4:return a/b
+    else:return("Enter the option from 1 to 4")
+print(calc(c,a,b))
+
+#
