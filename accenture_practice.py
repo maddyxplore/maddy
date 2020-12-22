@@ -76,7 +76,6 @@ for i in range(m,n+1):
 print(sum)
 
 #You have to find and return the number between ‘a’ and ‘b’ ( range inclusive on both ends) which has the maximum exponent of 2.
-# -----------------INCOMPLETED---------------------------#
 #a,b = int(input()), int(input())
 a,b = 7,12
 def expo(n):
@@ -88,5 +87,8 @@ def expo(n):
 max = 0
 temp = 0
 for i in range(a,b+1):
-    if 
+    if expo(i)>temp:
+        temp = expo(i)
+        max = i
+
 print(max)
